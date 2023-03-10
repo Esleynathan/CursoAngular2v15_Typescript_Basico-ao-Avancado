@@ -12,12 +12,10 @@ export class TitleComponent implements OnInit, OnChanges, OnDestroy {
   constructor() { }
 
   ngOnInit (): void { }
-  
+
   ngOnChanges(): void { }
 
-  ngOnDestroy(): void { 
-    console.log("Deu bom ele foi destruido!");
-  }
+  ngOnDestroy(): void { }
   
 
 }
