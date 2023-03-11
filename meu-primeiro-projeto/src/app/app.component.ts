@@ -3,6 +3,7 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 @Component({
   selector: 'app-root',
   template: `
+  <app-data-biding></app-data-biding>
     <router-outlet></router-outlet>
   `,
 })

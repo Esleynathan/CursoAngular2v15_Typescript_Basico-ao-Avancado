@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class DataBidingComponent {
 
+  public nome: string = "Esley!";
+  public idade: number = 29;  
+  public maisUm: number = 1;
+
 }
