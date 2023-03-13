@@ -13,20 +13,19 @@ export class DiretivasEstruturaisComponent implements OnInit {
   public list: Array <{ nome:string, idade: number}> = [
     { nome:"Ésley Nathan", idade: 29 },
     { nome:"Érika Dayse", idade: 34 },
-    { nome:"Camila Nascimento", idade: 26},
-  
+    { nome:"Camila Nascimento", idade: 26}  
   ];
 
-   ngOnInit(): void{
+  public nome: string = 'camila';
 
-      setInterval( ()=>{
-        if (this.condition ){
-        this.condition = false;
-        } else{
-          this.condition = true;
-        }
-      }, 2000)
-
+  ngOnInit(): void{
+    setInterval( ()=>{
+      if (this.condition ){
+      this.condition = false;
+      } else{
+        this.condition = true;
+      }
+    }, 2000)
   }
 
   public onClick(){  

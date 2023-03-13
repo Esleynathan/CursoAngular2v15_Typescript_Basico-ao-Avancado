@@ -1,5 +1,3 @@
-<hr>
-
 <p *ngIf="condition; else elseBlock">True</p>
 
 <ng-template #elseBlock> 
@@ -27,3 +25,25 @@
     [ {{i}} ] - Nome: {{item.nome}}, Idade: {{item.idade}}</li>    
 </ul>
     <button (click)="onClickAddList()">Add</button>
+
+<hr>
+
+<input type="text" [(ngModel)]="nome">
+
+<div [ngSwitch]="nome">
+    <p *ngSwitchCase="'esley'">
+        Ésley Nathan
+    </p>
+
+    <p *ngSwitchCase="'camila'">
+        Camila Nascimento
+    </p>
+
+    <p *ngSwitchCase="'erika'">
+        Érika Dayse
+    </p>
+
+    <p *ngSwitchDefault>
+        Nenhum nome encontrado.
+    </p>
+</div>

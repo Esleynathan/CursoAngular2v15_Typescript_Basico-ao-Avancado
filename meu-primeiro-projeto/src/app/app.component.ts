@@ -2,9 +2,7 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 
 @Component({
   selector: 'app-root',
-  template: `
-    <app-data-biding></app-data-biding>
-   
+  template: `   
     <app-diretivas-estruturais></app-diretivas-estruturais>
 
     <router-outlet></router-outlet>
