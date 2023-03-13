@@ -2,8 +2,12 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 
 @Component({
   selector: 'app-root',
-  template: `   
-    <app-diretivas-estruturais></app-diretivas-estruturais>
+  template: `
+    <!-- <app-data-biding></app-data-biding> -->
+    <!-- <app-diretivas-estruturais></app-diretivas-estruturais> -->
+
+
+    <app-diretivas-atributos> </app-diretivas-atributos>
 
     <router-outlet></router-outlet>
   `,
