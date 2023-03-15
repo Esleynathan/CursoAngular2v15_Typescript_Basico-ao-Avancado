@@ -15,10 +15,12 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
       <h1>Ésley Nathan</h1>
       <h3>Camila Nascimento</h3>
     </app-diretivas-atributos>
+    -->
+    
 
-    <router-outlet></router-outlet>  -->
+    <app-new-component> App Componente</app-new-component>
 
-    <app-diretivas-atributos>  </app-diretivas-atributos>
+    <router-outlet></router-outlet> 
   `,
 })
 export class AppComponent implements OnInit {
