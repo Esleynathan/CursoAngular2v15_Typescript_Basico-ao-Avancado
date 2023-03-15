@@ -4,8 +4,7 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
   selector: 'app-root',
   template: `
     <!-- <app-data-biding></app-data-biding> -->
-    <!-- <app-diretivas-estruturais></app-diretivas-estruturais> -->
-
+    <!-- <app-diretivas-estruturais></app-diretivas-estruturais>
 
     <app-diretivas-atributos> 
       <h1>Aulas de Diretivas de Atributo</h1>
@@ -17,7 +16,9 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
       <h3>Camila Nascimento</h3>
     </app-diretivas-atributos>
 
-    <router-outlet></router-outlet>
+    <router-outlet></router-outlet>  -->
+
+    <app-diretivas-atributos>  </app-diretivas-atributos>
   `,
 })
 export class AppComponent implements OnInit {
