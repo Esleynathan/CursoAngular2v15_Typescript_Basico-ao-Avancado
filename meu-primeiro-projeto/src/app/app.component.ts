@@ -21,7 +21,12 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
     <!-- <app-input [contador]="addValue"> </app-input>
     <button (click)="add()">  Add </button> -->
 
-    <app-output> </app-output>
+    <ng-template [ngIf]="getDados">
+      <h1> {{getDados.nome}} </h1>
+      <h2> {{getDados.idade}} </h2>    
+    </ng-template>
+
+    <app-output (enviarDados)="setDados($event)"> </app-output>
     <router-outlet></router-outlet> 
   `,
 })
@@ -30,6 +35,8 @@ export class AppComponent implements OnInit {
   public destruir:boolean = true;
   public addValue: number = 0;
 
+  public getDados: {nome: string, idade:number} | undefined;
+
   constructor() { }
     ngOnInit(): void { }
 
@@ -37,6 +44,13 @@ export class AppComponent implements OnInit {
     this.addValue += 1;
   }
 
+  public destruirComponente(){
+    this.destruir = false;
+  }
    
+  public setDados(event: {nome: string, idade: number}){
+    this.getDados = event;
+
+  }
 }
 
