@@ -1,4 +1,4 @@
-import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnInit } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -17,8 +17,10 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
     </app-diretivas-atributos>
     -->
     
-
-    <app-new-component> App Componente</app-new-component>
+    <!-- <app-new-component> App Componente</app-new-component> -->
+    
+    <app-input [contador]="addValue"> </app-input>
+    <button (click)="add()">  Add </button>
 
     <router-outlet></router-outlet> 
   `,
@@ -27,8 +29,15 @@ export class AppComponent implements OnInit {
 
   public destruir:boolean = true;
 
+  public addValue: number = 0;
+
   constructor() { }
-  
-  ngOnInit(): void { }
+    ngOnInit(): void { }
+
+  public add (){
+    this.addValue += 1;
+  }
+
+   
 }
 
