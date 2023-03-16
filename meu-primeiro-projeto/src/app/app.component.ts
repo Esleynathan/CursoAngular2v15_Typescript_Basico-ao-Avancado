@@ -14,21 +14,20 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
     <app-diretivas-atributos> 
       <h1>Ésley Nathan</h1>
       <h3>Camila Nascimento</h3>
-    </app-diretivas-atributos>
-    -->
+    </app-diretivas-atributos> -->
     
     <!-- <app-new-component> App Componente</app-new-component> -->
     
-    <app-input [contador]="addValue"> </app-input>
-    <button (click)="add()">  Add </button>
+    <!-- <app-input [contador]="addValue"> </app-input>
+    <button (click)="add()">  Add </button> -->
 
+    <app-output> </app-output>
     <router-outlet></router-outlet> 
   `,
 })
 export class AppComponent implements OnInit {
 
   public destruir:boolean = true;
-
   public addValue: number = 0;
 
   constructor() { }
