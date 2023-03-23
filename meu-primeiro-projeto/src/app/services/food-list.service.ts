@@ -15,7 +15,12 @@ export class FoodListService {
   constructor() { }
 
   public foodList(){
-    return this.list;
-    
+    return this.list;    
   }
+
+  public foodListAdd(value: string){
+    return this.list.push(value);
+
+  }
+
 }
