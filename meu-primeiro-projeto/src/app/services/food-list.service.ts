@@ -7,12 +7,7 @@ export class FoodListService {
 
   public emitEvent = new EventEmitter ();
 
-  private list: Array<string> = [
-    "X Bacon",
-    "Feijão",
-    "Ovo",
-    "Creatina",
-  ];
+  private list: Array<string> = [ ];
 
   constructor() { }
 
