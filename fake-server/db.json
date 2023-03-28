@@ -1,0 +1,40 @@
+{
+  "list-food": [
+    {
+      "id": 1,
+      "nome": "X Bacon"
+    },
+    {
+      "id": 2,
+      "nome": "Feijão"
+    },
+    {
+      "id": 3,
+      "nome": "Ovo"
+    },
+    {
+      "nome": "Creatina",
+      "id": 4
+    },
+    {
+      "nome": "Arroz",
+      "id": 5
+    },
+    {
+      "nome": "Bacon",
+      "id": 6
+    },
+    {
+      "nome": "Batata",
+      "id": 7
+    },
+    {
+      "nome": "Pão",
+      "id": 8
+    },
+    {
+      "nome": "Filé de Peixe",
+      "id": 9
+    }
+  ]
+}
