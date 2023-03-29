@@ -1,6 +1,9 @@
 <li *ngFor="let item of foodList">
 
-[{{item.id}}] - {{item.nome}}
-
+    [{{item.id}}] - {{item.nome}}
+    
+    <button click="foodListDelete(item.id)">
+    Deletar
+    </button>
 
 </li>

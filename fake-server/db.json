@@ -35,6 +35,18 @@
     {
       "nome": "Filé de Peixe",
       "id": 9
+    },
+    {
+      "nome": "Cachorro Quente",
+      "id": 10
+    },
+    {
+      "nome": "X-Tudo",
+      "id": 11
+    },
+    {
+      "nome": "Item 1",
+      "id": 12
     }
   ]
 }
